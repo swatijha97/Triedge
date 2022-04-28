@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Triedge-Assignment</title>
+  </head>
+  <body>
+    <header>
+      <div class="color-bar"></div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/logo.png" class="navbar-logo" alt="Triedge" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-home theme-color"></i>
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Our Service
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Sign Up/Sign In with
+                <span class="theme-color font-weight-bold">Triedge</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-shopping-cart"></i
+                ><sup class="cart-count">0</sup></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="blue-bar"></div>
+      <div class="banner">
+        <h1 class="banner-title">LIST OF EXAMS IN INDIA</h1>
+        <div class="banner-socials">
+          <a href="#" class="social-link"
+            ><i class="fab fa-linkedin-in linkedin-color"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fab fa-facebook-f facebook-color"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fab fa-google-plus-g gplus-color"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fab fa-twitter twitter-color"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fab fa-instagram instagram-color"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-nav">
+        <a href="#" class="nav-btn">Exam Info</a>
+        <a href="#" class="nav-btn">Preparation</a>
+        <a href="#" class="nav-btn active">Resources</a>
+        <i class="fas fa-ellipsis-v nav-btn"></i>
+        <a href="#" class="nav-btn main-nav-btn">
+          <img src="./assets/img/dots-menu.png" alt="menu" />
+        </a>
+      </section>
+      <section class="section-main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-3 sidebar">
+              <h2>FILTER BY</h2>
+              <div class="filter-accordion">
+                <button
+                  class="btn filterbtn"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#state"
+                  aria-expanded="false"
+                  aria-controls="state"
+                >
+                  <div class="filterbtn-icon">
+                    <i class="fas fa-landmark"></i>
+                  </div>
+                  <div class="filterbtn-text">State</div>
+                  <div class="filterbtn-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </button>
+                <button
+                  class="btn filterbtn mt-1"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#city"
+                  aria-expanded="false"
+                  aria-controls="city"
+                >
+                  <div class="filterbtn-icon">
+                    <i class="fas fa-city"></i>
+                  </div>
+                  <div class="filterbtn-text">City</div>
+                  <div class="filterbtn-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </button>
+                <button
+                  class="btn filterbtn mt-1"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#modeofstudy"
+                  aria-expanded="false"
+                  aria-controls="modeofstudy"
+                >
+                  <div class="filterbtn-icon">
+                    <i class="fas fa-book"></i>
+                  </div>
+                  <div class="filterbtn-text">Mode of study</div>
+                  <div class="filterbtn-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </button>
+                <button
+                  class="btn filterbtn mt-1"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#ownership"
+                  aria-expanded="false"
+                  aria-controls="ownership"
+                >
+                  <div class="filterbtn-icon">
+                    <i class="fas fa-hand-holding-heart"></i>
+                  </div>
+                  <div class="filterbtn-text">Ownership</div>
+                  <div class="filterbtn-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </button>
+                <button
+                  class="btn filterbtn mt-1"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#degree"
+                  aria-expanded="false"
+                  aria-controls="degree"
+                >
+                  <div class="filterbtn-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="filterbtn-text">Degree</div>
+                  <div class="filterbtn-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </button>
+                <button
+                  class="btn filterbtn mt-1"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#fee"
+                  aria-expanded="false"
+                  aria-controls="fee"
+                >
+                  <div class="filterbtn-icon">
+                    <i class="fas fa-chart-pie"></i>
+                  </div>
+                  <div class="filterbtn-text">Fee</div>
+                  <div class="filterbtn-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </button>
+                <button
+                  class="btn filterbtn mt-1"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#branch"
+                  aria-expanded="false"
+                  aria-controls="branch"
+                >
+                  <div class="filterbtn-icon">
+                    <i class="fas fa-code-branch"></i>
+                  </div>
+                  <div class="filterbtn-text">Branch</div>
+                  <div class="filterbtn-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </button>
+
+                <button
+                  class="btn filterbtn mt-1"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#exam"
+                  aria-expanded="false"
+                  aria-controls="exam"
+                >
+                  <div class="filterbtn-icon">
+                    <i class="fas fa-clipboard-list"></i>
+                  </div>
+                  <div class="filterbtn-text">Exam</div>
+                  <div class="filterbtn-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </button>
+                <div class="collapse" id="exam">
+                  <table class="table-striped">
+                    <tr>
+                      <td>
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="cat"
+                          />
+                          <label class="custom-control-label" for="cat"
+                            >CAT</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="mat"
+                          />
+                          <label class="custom-control-label" for="mat"
+                            >MAT</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="cmat"
+                          />
+                          <label class="custom-control-label" for="cmat"
+                            >CMAT</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="xat"
+                          />
+                          <label class="custom-control-label" for="xat"
+                            >XAT</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="atma"
+                          />
+                          <label class="custom-control-label" for="atma"
+                            >ATMA</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="gmat"
+                          />
+                          <label class="custom-control-label" for="gmat"
+                            >GMAT</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-9 main-content">
+              <div class="filter-div">
+                <div class="filters">
+                  <button>
+                    B.E. / B. Tech <span class="filter-remove">X</span>
+                  </button>
+                  <button>
+                    B.E. / B. Tech <span class="filter-remove">X</span>
+                  </button>
+                  <button>
+                    B.E. / B. Tech <span class="filter-remove">X</span>
+                  </button>
+                  <button>
+                    B.E. / B. Tech <span class="filter-remove">X</span>
+                  </button>
+                </div>
+                <button class="filter-clear">Clear All</button>
+              </div>
+              <div class="sortby">
+                SORTED BY
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="text">Popularity</span>
+                    <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        id="featured"
+                        name="customRadio"
+                        class="custom-control-input"
+                      />
+                      <label class="custom-control-label" for="featured"
+                        >Featured</label
+                      >
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        id="popularity"
+                        name="customRadio"
+                        class="custom-control-input"
+                        checked
+                      />
+                      <label class="custom-control-label" for="popularity"
+                        >Popularity</label
+                      >
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        id="feel2h"
+                        name="customRadio"
+                        class="custom-control-input"
+                      />
+                      <label class="custom-control-label" for="feel2h"
+                        >Fee: Low to High</label
+                      >
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        id="feeh2l"
+                        name="customRadio"
+                        class="custom-control-input"
+                      />
+                      <label class="custom-control-label" for="feeh2l"
+                        >Fee: High to Low</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cards">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      class="card-img-top"
+                      src="./assets/img/card-img.jpg"
+                      alt="Card image cap"
+                    />
+                    <i class="fas fa-bookmark"></i>
+                    <div class="card-overlay">
+                      <div class="card-overlay-title">
+                        ABC College of Engineering
+                      </div>
+                      <div class="card-overlay-subtext">
+                        <span>Location</span>
+                        <span>Established</span>
+                        <span>Type</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body d-inline-flex">
+                    <div class="col-7 pl-0 pr-1">
+                      <p class="card-text">Total Engineering Courses:</p>
+                      <p class="card-text">Avg CTC</p>
+                      <p class="card-text">Avg Fees</p>
+                    </div>
+                    <div class="col-5 px-0 text-center">
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star text-warning"></i>
+                        4/5
+                      </div>
+                      <p class="card-text">Based on 45 reviews</p>
+                      <button class="btn btn-primary btn-theme">
+                        Download Brochure
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      class="card-img-top"
+                      src="./assets/img/card-img.jpg"
+                      alt="Card image cap"
+                    />
+                    <i class="fas fa-bookmark"></i>
+                    <div class="card-overlay">
+                      <div class="card-overlay-title">
+                        ABC College of Engineering
+                      </div>
+                      <div class="card-overlay-subtext">
+                        <span>Location</span>
+                        <span>Established</span>
+                        <span>Type</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body d-inline-flex">
+                    <div class="col-7 pl-0 pr-1">
+                      <p class="card-text">Total Engineering Courses:</p>
+                      <p class="card-text">Avg CTC</p>
+                      <p class="card-text">Avg Fees</p>
+                    </div>
+                    <div class="col-5 px-0 text-center">
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star text-warning"></i>
+                        4/5
+                      </div>
+                      <p class="card-text">Based on 45 reviews</p>
+                      <button class="btn btn-primary btn-theme">
+                        Download Brochure
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      class="card-img-top"
+                      src="./assets/img/card-img.jpg"
+                      alt="Card image cap"
+                    />
+                    <i class="fas fa-bookmark"></i>
+                    <div class="card-overlay">
+                      <div class="card-overlay-title">
+                        ABC College of Engineering
+                      </div>
+                      <div class="card-overlay-subtext">
+                        <span>Location</span>
+                        <span>Established</span>
+                        <span>Type</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body d-inline-flex">
+                    <div class="col-7 pl-0 pr-1">
+                      <p class="card-text">Total Engineering Courses:</p>
+                      <p class="card-text">Avg CTC</p>
+                      <p class="card-text">Avg Fees</p>
+                    </div>
+                    <div class="col-5 px-0 text-center">
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star text-warning"></i>
+                        4/5
+                      </div>
+                      <p class="card-text">Based on 45 reviews</p>
+                      <button class="btn btn-primary btn-theme">
+                        Download Brochure
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      class="card-img-top"
+                      src="./assets/img/card-img.jpg"
+                      alt="Card image cap"
+                    />
+                    <i class="fas fa-bookmark"></i>
+                    <div class="card-overlay">
+                      <div class="card-overlay-title">
+                        ABC College of Engineering
+                      </div>
+                      <div class="card-overlay-subtext">
+                        <span>Location</span>
+                        <span>Established</span>
+                        <span>Type</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body d-inline-flex">
+                    <div class="col-7 pl-0 pr-1">
+                      <p class="card-text">Total Engineering Courses:</p>
+                      <p class="card-text">Avg CTC</p>
+                      <p class="card-text">Avg Fees</p>
+                    </div>
+                    <div class="col-5 px-0 text-center">
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star text-warning"></i>
+                        4/5
+                      </div>
+                      <p class="card-text">Based on 45 reviews</p>
+                      <button class="btn btn-primary btn-theme">
+                        Download Brochure
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      class="card-img-top"
+                      src="./assets/img/card-img.jpg"
+                      alt="Card image cap"
+                    />
+                    <i class="fas fa-bookmark"></i>
+                    <div class="card-overlay">
+                      <div class="card-overlay-title">
+                        ABC College of Engineering
+                      </div>
+                      <div class="card-overlay-subtext">
+                        <span>Location</span>
+                        <span>Established</span>
+                        <span>Type</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body d-inline-flex">
+                    <div class="col-7 pl-0 pr-1">
+                      <p class="card-text">Total Engineering Courses:</p>
+                      <p class="card-text">Avg CTC</p>
+                      <p class="card-text">Avg Fees</p>
+                    </div>
+                    <div class="col-5 px-0 text-center">
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star text-warning"></i>
+                        4/5
+                      </div>
+                      <p class="card-text">Based on 45 reviews</p>
+                      <button class="btn btn-primary btn-theme">
+                        Download Brochure
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      class="card-img-top"
+                      src="./assets/img/card-img.jpg"
+                      alt="Card image cap"
+                    />
+                    <i class="fas fa-bookmark"></i>
+                    <div class="card-overlay">
+                      <div class="card-overlay-title">
+                        ABC College of Engineering
+                      </div>
+                      <div class="card-overlay-subtext">
+                        <span>Location</span>
+                        <span>Established</span>
+                        <span>Type</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body d-inline-flex">
+                    <div class="col-7 pl-0 pr-1">
+                      <p class="card-text">Total Engineering Courses:</p>
+                      <p class="card-text">Avg CTC</p>
+                      <p class="card-text">Avg Fees</p>
+                    </div>
+                    <div class="col-5 px-0 text-center">
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star text-warning"></i>
+                        4/5
+                      </div>
+                      <p class="card-text">Based on 45 reviews</p>
+                      <button class="btn btn-primary btn-theme">
+                        Download Brochure
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-pagination">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true"
+                  ><i class="fas fa-chevron-left"></i
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true"
+                  ><i class="fas fa-chevron-right"></i
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <footer class="">
+      <div class="main-footer">
+        <div class="container-fluid">
+          <div class="footer-header">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="footer-text">
+                  <h5>BE THE FIRST TO KNOW</h5>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="search-bar">
+                  <form class="form-inline">
+                    <input
+                      class="form-control mr-sm-2 search-width"
+                      type="search"
+                      placeholder="Email Address"
+                      aria-label="Search"
+                    />
+
+                    <button class="send-btn">
+                      <i class="fas fa-paper-plane"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer-social-icon">
+                  <a href="#" class="footer-social-link"
+                    ><i class="fab fa-facebook-f facebook-color"></i
+                  ></a>
+                  <a href="#" class="footer-social-link"
+                    ><i class="fab fa-linkedin-in linkedin-color"></i
+                  ></a>
+                  <a href="#" class="footer-social-link"
+                    ><i class="fab fa-twitter twitter-color"></i
+                  ></a>
+                  <a href="#" class="footer-social-link"
+                    ><i class="fab fa-instagram instagram-color"></i
+                  ></a>
+                  <a href="#" class="footer-social-link"
+                    ><i class="fab fa-whatsapp whatsapp-color"></i
+                  ></a>
+                  <a href="#" class="footer-social-link"
+                    ><i class="far fa-envelope envelope-color"></i
+                  ></a>
+                </div>
+                <p class="social-para">Stay Connected</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-main">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="footer-logo-section">
+                  <div class="footer-logo">
+                    <img src="./assets/img/logo-white.png" alt="" />
+                    <p class="footer-logo-text">
+                      It was popularised in the 1960s with the release of
+                      Letraset sheets containing Lorem Ipsum passages, and more
+                      recently with desktop
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="quick-section">
+                  <div class="quick-section-heading">
+                    <h5>Quick Links</h5>
+                  </div>
+                  <div class="quick-link">
+                    <a href="#" class="quicklink-list">Home</a>
+                    <a href="#" class="quicklink-list">About Us</a>
+                    <a href="#" class="quicklink-list">Triedge Partners</a>
+                    <a href="#" class="quicklink-list">Contact Us</a>
+                    <a href="#" class="quicklink-list">Terms & Conditions</a>
+                    <a href="#" class="quicklink-list">Privacy Policy</a>
+                    <a href="#" class="quicklink-list">Sitemap</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="oursercvice-section">
+                  <div class="oursercvice-heading">
+                    <h5>OUR SERVICES</h5>
+                  </div>
+                  <div class="quick-link">
+                    <a href="#" class="oursercvice-list">Fresher Jobs</a>
+                    <a href="#" class="oursercvice-list"
+                      >InternEdge - Internships & Projects</a
+                    >
+                    <a href="#" class="oursercvice-list"
+                      >Resume Edge - Resume Writing Services</a
+                    >
+                    <a href="#" class="oursercvice-list"
+                      >Readers Galleria - Curated Library</a
+                    >
+                    <a href="#" class="oursercvice-list"
+                      >Trideus - Campus Ambassadors</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="triedge-event">
+                  <div class="triedge-heading">
+                    <h5>OUR SERVICES</h5>
+                  </div>
+                  <div class="triedge-link">
+                    <a href="#" class="triedge-list">Triedge Events</a>
+                    <a href="#" class="triedge-list"
+                      >Jobs & Internship Fair 2019</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © Copyright 2022 | All Rights Reserved by TRIEDGE Solutions Pvt. Ltd
+        </p>
+      </div>
+    </footer>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
